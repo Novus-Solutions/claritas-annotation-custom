@@ -27,7 +27,7 @@ export default (function (_ref) {
   return React.createElement("div", null, debug && React.createElement(DebugBox, {
     state: debug,
     lastAction: debug.lastAction
-  })
+  }),
   // , React.createElement(TaskDescription, {
   //   description: taskDescription
   // }),
