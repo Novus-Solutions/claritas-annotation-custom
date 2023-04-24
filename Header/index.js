@@ -20,7 +20,7 @@ export default (function (_ref) {
     className: classes.header
   }, React.createElement("div", {
     className: classes.fileInfo
-  }, "Edit elevation"), React.createElement("div", {
+  }, title), React.createElement("div", {
     className: classes.headerActions
   }, React.createElement(HeaderButtonContext.Provider, {
     value: {
