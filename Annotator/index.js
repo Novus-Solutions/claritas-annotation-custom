@@ -23,6 +23,7 @@ export default (function (_ref) {
       imageTagList = _ref$imageTagList === void 0 ? [] : _ref$imageTagList,
       _ref$imageClsList = _ref.imageClsList,
       imageClsList = _ref$imageClsList === void 0 ? [] : _ref$imageClsList,
+      taskTitle = _ref.taskTitle,
       taskDescription = _ref.taskDescription,
       RegionEditLabel = _ref.RegionEditLabel,
       onExit = _ref.onExit;
@@ -35,6 +36,7 @@ export default (function (_ref) {
     pointDistancePrecision: pointDistancePrecision,
     selectedTool: "select",
     mode: null,
+    taskDescription: _ref.taskDescription,
     taskDescription: taskDescription,
     images: images,
     labelImages: imageClsList.length > 0 || imageTagList.length > 0,
