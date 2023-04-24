@@ -12,15 +12,15 @@ import styles from "./styles";
 var useStyles = makeStyles(styles);
 export default (function (_ref) {
   var onHeaderButtonClick = _ref.onHeaderButtonClick,
-      title = _ref.title,
-      inFullScreen = _ref.inFullScreen,
-      multipleImages = _ref.multipleImages;
+    taskTitle = _ref.taskTitle,
+    inFullScreen = _ref.inFullScreen,
+    multipleImages = _ref.multipleImages;
   var classes = useStyles();
   return React.createElement("div", {
     className: classes.header
   }, React.createElement("div", {
     className: classes.fileInfo
-  }, title), React.createElement("div", {
+  }, taskTitle), React.createElement("div", {
     className: classes.headerActions
   }, React.createElement(HeaderButtonContext.Provider, {
     value: {
