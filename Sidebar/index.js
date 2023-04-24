@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import TaskDescription from "../TaskDescriptionSidebarBox";
+// import TaskDescription from "../TaskDescriptionSidebarBox";
 import ImageSelector from "../ImageSelectorSidebarBox";
 import RegionSelector from "../RegionSelectorSidebarBox";
 import History from "../HistorySidebarBox";
@@ -9,7 +9,7 @@ import TagsSidebarBox from "../TagsSidebarBox";
 var useStyles = makeStyles({});
 export default (function (_ref) {
   var debug = _ref.debug,
-      taskDescription = _ref.taskDescription,
+      // taskDescription = _ref.taskDescription,
       images = _ref.images,
       regions = _ref.regions,
       history = _ref.history,
@@ -27,9 +27,11 @@ export default (function (_ref) {
   return React.createElement("div", null, debug && React.createElement(DebugBox, {
     state: debug,
     lastAction: debug.lastAction
-  }), React.createElement(TaskDescription, {
-    description: taskDescription
-  }), labelImages && React.createElement(TagsSidebarBox, {
+  })
+  // , React.createElement(TaskDescription, {
+  //   description: taskDescription
+  // }),
+   labelImages && React.createElement(TagsSidebarBox, {
     currentImage: currentImage,
     imageClsList: imageClsList,
     imageTagList: imageTagList,
