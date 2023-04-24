@@ -26,10 +26,10 @@
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
   },
-  "homepage": "https://github.com/Novus-Solutions/claritas-annotation-custom",
+  "homepage": "https://github.com/TrongNhan30520/react-image-annotate-custom-region-edit-label-ver-2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Novus-Solutions/claritas-annotation-custom"
+    "url": "https://github.com/TrongNhan30520/react-image-annotate-custom-region-edit-label-ver-2"
   },
   "scripts": {
     "start": "react-scripts start",
