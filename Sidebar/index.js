@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import TaskDescription from "../TaskDescriptionSidebarBox";
-import ImageSelector from "../ImageSelectorSidebarBox";
+// import TaskDescription from "../TaskDescriptionSidebarBox";
+// import ImageSelector from "../ImageSelectorSidebarBox";
 import RegionSelector from "../RegionSelectorSidebarBox";
 import History from "../HistorySidebarBox";
 import DebugBox from "../DebugSidebarBox";
@@ -9,8 +9,8 @@ import TagsSidebarBox from "../TagsSidebarBox";
 var useStyles = makeStyles({});
 export default (function (_ref) {
   var debug = _ref.debug,
-      taskDescription = _ref.taskDescription,
-      images = _ref.images,
+      // taskDescription = _ref.taskDescription,
+      // images = _ref.images,
       regions = _ref.regions,
       history = _ref.history,
       labelImages = _ref.labelImages,
@@ -28,19 +28,21 @@ export default (function (_ref) {
     state: debug,
     lastAction: debug.lastAction
   })
-  , React.createElement(TaskDescription, {
-    description: taskDescription
-  }),
+  // , React.createElement(TaskDescription, {
+  //   description: taskDescription
+  // }),
    labelImages && React.createElement(TagsSidebarBox, {
     currentImage: currentImage,
     imageClsList: imageClsList,
     imageTagList: imageTagList,
     onChangeImage: onChangeImage,
     expandedByDefault: true
-  }), React.createElement(ImageSelector, {
-    onSelect: onSelectImage,
-    images: images
-  }), React.createElement(RegionSelector, {
+  }),
+  //  React.createElement(ImageSelector, {
+  //   onSelect: onSelectImage,
+  //   images: images
+  // }),
+   React.createElement(RegionSelector, {
     regions: regions,
     onSelectRegion: onSelectRegion,
     onChangeRegion: onChangeRegion,

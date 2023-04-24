@@ -50,7 +50,7 @@ export default (function (_ref) {
   }), React.createElement(SmallToolButton, {
     alwaysShowing: true,
     id: "zoom",
-    name: "Zoom In/``````Out",
+    name: "Zoom In/Out",
     icon: React.createElement(FontAwesomeIcon, {
       size: "xs",
       fixedWidth: true,
