@@ -40,7 +40,7 @@ export default (function (_ref) {
   var description = _ref.description;
   var classes = useStyles();
   return React.createElement(SidebarBoxContainer, {
-    title: "Task Description",
+    title: "Task 1 Description",
     icon: React.createElement(DescriptionIcon, {
       style: {
         color: grey[700]
