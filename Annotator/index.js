@@ -24,8 +24,10 @@ export default (function (_ref) {
     _ref$imageClsList = _ref.imageClsList,
     imageClsList = _ref$imageClsList === void 0 ? [] : _ref$imageClsList,
     taskTitle = _ref.taskTitle,
+    hideSave = _ref.hideSave,
     taskDescription = _ref.taskDescription,
     RegionEditLabel = _ref.RegionEditLabel,
+    propsList = _ref.propsList,
     onExit = _ref.onExit;
 
   var _useReducer = useReducer(reducer, {
@@ -33,10 +35,11 @@ export default (function (_ref) {
     allowedArea: allowedArea,
     selectedImage: selectedImage,
     showPointDistances: showPointDistances,
-    pointDistancePrecision: pointDistancePrecision,
+    pointDistancePrecision: pointDistancePrecision
     selectedTool: "select",
     mode: null,
     taskTitle: taskTitle,
+    hideSave: hideSave,
     taskDescription: taskDescription,
     images: images,
     labelImages: imageClsList.length > 0 || imageTagList.length > 0,
@@ -45,7 +48,9 @@ export default (function (_ref) {
     imageClsList: imageClsList,
     imageTagList: imageTagList,
     enabledTools: enabledTools,
-    history: []
+    history: [],
+    propsList: propsList,
+
   }),
     _useReducer2 = _slicedToArray(_useReducer, 2),
     state = _useReducer2[0],

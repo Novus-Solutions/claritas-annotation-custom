@@ -13,15 +13,16 @@ import Select from "react-select";
 var useStyles = makeStyles(styles);
 export default (function (_ref) {
   var region = _ref.region,
-      editing = _ref.editing,
-      _ref$allowedClasses = _ref.allowedClasses,
-      allowedClasses = _ref$allowedClasses === void 0 ? ["Laptop", "Mouse", "Compuda"] : _ref$allowedClasses,
-      _ref$allowedTags = _ref.allowedTags,
-      allowedTags = _ref$allowedTags === void 0 ? ["Dog", "Cat", "Woof", "Electronic Device"] : _ref$allowedTags,
-      onDelete = _ref.onDelete,
-      _onChange = _ref.onChange,
-      onClose = _ref.onClose,
-      onOpen = _ref.onOpen;
+    editing = _ref.editing,
+    _ref$allowedClasses = _ref.allowedClasses,
+    allowedClasses = _ref$allowedClasses === void 0 ? ["Laptop", "Mouse", "Compuda"] : _ref$allowedClasses,
+    _ref$allowedTags = _ref.allowedTags,
+    allowedTags = _ref$allowedTags === void 0 ? ["Dog", "Cat", "Woof", "Electronic Device"] : _ref$allowedTags,
+    onDelete = _ref.onDelete,
+    _onChange = _ref.onChange,
+    onClose = _ref.onClose,
+    onOpen = _ref.onOpen,
+    propsList = _ref.propsList
   var classes = useStyles();
   return React.createElement(Paper, {
     onClick: function onClick() {
