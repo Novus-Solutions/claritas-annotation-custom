@@ -3,7 +3,8 @@ import Button from "@material-ui/core/Button"
 export var HeaderButtonContext = createContext()
 export default (function (_ref) {
   var name = _ref.name,
-    Icon = _ref.Icon
+    Icon = _ref.Icon,
+    hideSave = _ref.hideSave
   return React.createElement(
     HeaderButtonContext.Consumer,
     null,
@@ -18,6 +19,7 @@ export default (function (_ref) {
           style: {
             width: 120,
             margin: 2,
+            display: hideSave ? "none" : "block",
           },
         },
         React.createElement(
