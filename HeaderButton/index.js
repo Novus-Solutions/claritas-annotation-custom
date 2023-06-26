@@ -19,7 +19,7 @@ export default (function (_ref) {
           style: {
             width: 120,
             margin: 2,
-            display: hideSave ? "none" : "block",
+            // display: hideSave ? "none" : "block",
           },
         },
         React.createElement(
