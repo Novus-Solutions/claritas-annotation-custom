@@ -67,7 +67,7 @@ export default (function (_ref) {
               name: "Fullscreen",
               Icon: FullscreenIcon,
             }),
-        !hideSave &&
+        (!hideSave || hideSave !== true) &&
           React.createElement(HeaderButton, {
             name: "Save",
             Icon: ExitIcon,

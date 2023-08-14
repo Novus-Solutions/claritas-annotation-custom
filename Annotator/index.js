@@ -36,8 +36,7 @@ export default (function (_ref) {
     taskDescription = _ref.taskDescription,
     RegionEditLabel = _ref.RegionEditLabel,
     propsList = _ref.propsList,
-    onExit = _ref.onExit,
-    hideSave = _ref.hideSave
+    onExit = _ref.onExit
 
   var _useReducer = useReducer(reducer, {
       showTags: showTags,
