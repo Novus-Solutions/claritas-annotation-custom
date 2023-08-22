@@ -12,6 +12,7 @@ export default (function (_ref) {
     // taskDescription = _ref.taskDescription,
     // images = _ref.images,
     regions = _ref.regions,
+    editMask = _ref.editMask,
     history = _ref.history,
     labelImages = _ref.labelImages,
     currentImage = _ref.currentImage,
@@ -23,7 +24,7 @@ export default (function (_ref) {
     onChangeRegion = _ref.onChangeRegion,
     onDeleteRegion = _ref.onDeleteRegion,
     _onRestoreHistory = _ref.onRestoreHistory
-  editMask = _ref.editMask
+
   var classes = useStyles()
   return React.createElement(
     "div",
