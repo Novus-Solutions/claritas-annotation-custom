@@ -153,6 +153,7 @@ var Row = function Row(_ref2) {
 
 export default (function (_ref3) {
   var regions = _ref3.regions,
+    editMask = _ref3.editMask,
     onDeleteRegion = _ref3.onDeleteRegion,
     onChangeRegion = _ref3.onChangeRegion,
     onSelectRegion = _ref3.onSelectRegion
@@ -210,7 +211,7 @@ export default (function (_ref3) {
         },
       }),
       regions.map(function (r, i) {
-        if (r.fillColor) {
+        if (r.fillColor && editMask === false) {
           return
         }
         return React.createElement(Row, {
