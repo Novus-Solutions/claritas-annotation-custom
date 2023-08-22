@@ -201,6 +201,7 @@ export default (function (_ref) {
             debug: window.localStorage.$ANNOTATE_DEBUG_MODE && state,
             taskDescription: state.taskDescription,
             images: state.images,
+            editMask: state.editMask,
             regions: currentImage ? currentImage.regions || [] : [],
             history: state.history,
             currentImage: currentImage,
