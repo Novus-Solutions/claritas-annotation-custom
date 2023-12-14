@@ -48,6 +48,9 @@ export default {
     zIndex: 9,
     height: "100%",
     boxShadow: "0px 0px 5px rgba(0,0,0,0.1)",
+    "&.expanded": {
+      display: "none",
+    },
   },
   expandContainer: {
     height: "100%",
@@ -59,6 +62,7 @@ export default {
     padding: 0,
     width: 30,
     height: 30,
+    transform: "rotate(90deg)",
     "& .icon": {
       marginTop: -6,
       width: 20,

@@ -208,7 +208,8 @@ export default (function (_ref) {
           React.createElement(
             IconButton,
             {
-              onClick: function onClick() {
+              onClick: function onClick(e) {
+                e.stopPropagation()
                 return changeExpanded(!expanded)
               },
               className: classes.expandButton,
