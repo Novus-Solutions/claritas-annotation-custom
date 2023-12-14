@@ -209,6 +209,7 @@ export default (function (_ref) {
             IconButton,
             {
               onClick: function onClick(e) {
+                e.preventDefault()
                 e.stopPropagation()
                 return changeExpanded(!expanded)
               },
@@ -222,7 +223,10 @@ export default (function (_ref) {
         React.createElement(
           "div",
           {
-            className: classes.sidebarContainer,
+            className: classnames(
+              classes.sidebarContainer,
+              expanded && "expanded"
+            ),
           },
           React.createElement(Sidebar, {
             debug: window.localStorage.$ANNOTATE_DEBUG_MODE && state,
