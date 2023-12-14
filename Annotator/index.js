@@ -37,6 +37,7 @@ export default (function (_ref) {
     taskDescription = _ref.taskDescription,
     RegionEditLabel = _ref.RegionEditLabel,
     propsList = _ref.propsList,
+    settingsOpen = _ref.settingsOpen,
     onExit = _ref.onExit
 
   var _useReducer = useReducer(reducer, {
@@ -58,6 +59,7 @@ export default (function (_ref) {
       imageClsList: imageClsList,
       imageTagList: imageTagList,
       enabledTools: enabledTools,
+      settingsOpen: settingsOpen,
       history: [],
       propsList: propsList,
     }),

@@ -218,7 +218,7 @@ export default (function (_ref) {
         )
       ),
       React.createElement(SettingsDialog, {
-        open: state.settingsOpen,
+        open: state.settingsOpen || true,
         onClose: function onClose() {
           return dispatch({
             type: "HEADER_BUTTON_CLICKED",
