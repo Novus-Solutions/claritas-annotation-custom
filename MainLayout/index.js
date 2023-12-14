@@ -201,22 +201,22 @@ export default (function (_ref) {
               )
         ),
         React.createElement(
+          IconButton,
+          {
+            onClick: function onClick() {
+              return changeExpanded(!expanded)
+            },
+            className: classes.expandButton,
+          },
+          React.createElement(ExpandIcon, {
+            className: classnames("icon", expanded && "expanded"),
+          })
+        ),
+        React.createElement(
           "div",
           {
             className: classes.sidebarContainer,
           },
-          React.createElement(
-            IconButton,
-            {
-              onClick: function onClick() {
-                return changeExpanded(!expanded)
-              },
-              className: classes.expandButton,
-            },
-            React.createElement(ExpandIcon, {
-              className: classnames("icon", expanded && "expanded"),
-            })
-          ),
           React.createElement(Sidebar, {
             debug: window.localStorage.$ANNOTATE_DEBUG_MODE && state,
             taskDescription: state.taskDescription,
