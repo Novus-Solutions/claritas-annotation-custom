@@ -199,7 +199,7 @@ export default (function (_ref) {
             className: classes.sidebarContainer,
           },
           React.createElement(Sidebar, {
-            debug: window.localStorage.$ANNOTATE_DEBUG_MODE && debug,
+            debug: debug,
             taskDescription: state.taskDescription,
             images: state.images,
             editMask: state.editMask,
