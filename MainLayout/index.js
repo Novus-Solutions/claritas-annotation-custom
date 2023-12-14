@@ -23,7 +23,7 @@ export default (function (_ref) {
   var classes = useStyles()
   var settings = useSettings()
 
-  var _useState = useState(true),
+  var _useState = useState(false),
     _useState2 = _slicedToArray(_useState, 2),
     expanded = _useState2[0],
     changeExpanded = _useState2[1]
