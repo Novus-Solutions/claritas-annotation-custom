@@ -1,5 +1,5 @@
 import _slicedToArray from "@babel/runtime/helpers/esm/slicedToArray"
-import React, { useState, memo } from "react"
+import React, { useState } from "react"
 import Paper from "@material-ui/core/Paper"
 import { makeStyles } from "@material-ui/core/styles"
 import ExpandIcon from "@material-ui/icons/ExpandMore"
@@ -7,8 +7,6 @@ import IconButton from "@material-ui/core/IconButton"
 import Collapse from "@material-ui/core/Collapse"
 import { grey } from "@material-ui/core/colors"
 import classnames from "classnames"
-import useEventCallback from "use-event-callback"
-import SidebarBox from "react-material-workspace-layout/SidebarBox"
 var useStyles = makeStyles({
   container: {
     margin: 8,
@@ -55,7 +53,7 @@ var useStyles = makeStyles({
     },
   },
 })
-export var SidebarBoxContainer = function SidebarBoxContainer(_ref) {
+export default (function (_ref) {
   var icon = _ref.icon,
     title = _ref.title,
     subTitle = _ref.subTitle,
@@ -66,7 +64,7 @@ export var SidebarBoxContainer = function SidebarBoxContainer(_ref) {
     expandedByDefault =
       _ref$expandedByDefaul === void 0 ? false : _ref$expandedByDefaul
   var classes = useStyles()
-  var content = /*#__PURE__*/ React.createElement(
+  var content = React.createElement(
     "div",
     {
       className: classnames(classes.expandedContent, noScroll && "noScroll"),
@@ -79,18 +77,49 @@ export var SidebarBoxContainer = function SidebarBoxContainer(_ref) {
     expanded = _useState2[0],
     changeExpanded = _useState2[1]
 
-  var toggleExpanded = useEventCallback(function () {
-    return changeExpanded(!expanded)
-  })
-  return /*#__PURE__*/ React.createElement(
-    SidebarBox,
+  return React.createElement(
+    Paper,
     {
-      icon: icon,
-      title: title,
+      className: classes.container,
     },
-    children
+    React.createElement(
+      "div",
+      {
+        className: classes.header,
+      },
+      icon,
+      React.createElement(
+        "div",
+        {
+          className: classes.title,
+        },
+        title,
+        " ",
+        React.createElement("span", null, subTitle)
+      ),
+      React.createElement(
+        IconButton,
+        {
+          onClick: function onClick() {
+            return changeExpanded(!expanded)
+          },
+          className: classes.expandButton,
+        },
+        React.createElement(ExpandIcon, {
+          className: classnames("icon", expanded && "expanded"),
+        })
+      )
+    ),
+    noScroll
+      ? expanded
+        ? content
+        : null
+      : React.createElement(
+          Collapse,
+          {
+            in: expanded,
+          },
+          content
+        )
   )
-}
-export default memo(SidebarBoxContainer, function (prev, next) {
-  return prev.title === next.title && prev.children === next.children
 })

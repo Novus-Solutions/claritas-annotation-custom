@@ -48,7 +48,7 @@ export default (function (_ref) {
           color: grey[700],
         },
       }),
-      expandedByDefault: true,
+      expandedByDefault: description && description !== "" ? false : true,
     },
     React.createElement(
       "div",
