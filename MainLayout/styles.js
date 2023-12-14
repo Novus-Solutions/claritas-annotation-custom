@@ -71,8 +71,9 @@ export default {
     borderLeft: "1px solid #bdbdbd",
     borderBottom: "1px solid #bdbdbd",
     backgroundColor: "#fff",
+    borderRadius: 0,
     borderBottomLeftRadius: "50%",
-    borderBottomLeftRadius: "50%",
+    borderBottomRightRadius: "50%",
     alignItems: "center",
     "& .icon": {
       marginTop: -6,
