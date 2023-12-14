@@ -17,6 +17,7 @@ export default (function (_ref) {
   var state = _ref.state,
     dispatch = _ref.dispatch,
     RegionEditLabel = _ref.RegionEditLabel
+  debug = _ref.debug
   var classes = useStyles()
   var settings = useSettings()
 
@@ -198,7 +199,7 @@ export default (function (_ref) {
             className: classes.sidebarContainer,
           },
           React.createElement(Sidebar, {
-            debug: window.localStorage.$ANNOTATE_DEBUG_MODE && state,
+            debug: window.localStorage.$ANNOTATE_DEBUG_MODE && debug,
             taskDescription: state.taskDescription,
             images: state.images,
             editMask: state.editMask,
