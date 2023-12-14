@@ -20,6 +20,11 @@ export default (function (_ref) {
   var classes = useStyles()
   var settings = useSettings()
 
+  var _useState = useState(true),
+    _useState2 = _slicedToArray(_useState, 2),
+    expanded = _useState2[0],
+    changeExpanded = _useState2[1]
+
   var action = function action(type) {
     for (
       var _len = arguments.length,
@@ -197,6 +202,18 @@ export default (function (_ref) {
           {
             className: classes.sidebarContainer,
           },
+          React.createElement(
+            IconButton,
+            {
+              onClick: function onClick() {
+                return changeExpanded(!expanded)
+              },
+              className: classes.expandButton,
+            },
+            React.createElement(ExpandIcon, {
+              className: classnames("icon", expanded && "expanded"),
+            })
+          ),
           React.createElement(Sidebar, {
             debug: window.localStorage.$ANNOTATE_DEBUG_MODE && state,
             taskDescription: state.taskDescription,
