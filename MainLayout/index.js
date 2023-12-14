@@ -201,16 +201,22 @@ export default (function (_ref) {
               )
         ),
         React.createElement(
-          IconButton,
+          "div",
           {
-            onClick: function onClick() {
-              return changeExpanded(!expanded)
-            },
-            className: classes.expandButton,
+            className: classes.expandContainer,
           },
-          React.createElement(ExpandIcon, {
-            className: classnames("icon", expanded && "expanded"),
-          })
+          React.createElement(
+            IconButton,
+            {
+              onClick: function onClick() {
+                return changeExpanded(!expanded)
+              },
+              className: classes.expandButton,
+            },
+            React.createElement(ExpandIcon, {
+              className: classnames("icon", expanded && "expanded"),
+            })
+          )
         ),
         React.createElement(
           "div",

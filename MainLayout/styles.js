@@ -49,6 +49,12 @@ export default {
     height: "100%",
     boxShadow: "0px 0px 5px rgba(0,0,0,0.1)",
   },
+  expandContainer: {
+    height: "100%",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  },
   expandButton: {
     padding: 0,
     width: 30,
