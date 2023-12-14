@@ -16,8 +16,8 @@ var useStyles = makeStyles(styles)
 export default (function (_ref) {
   var state = _ref.state,
     dispatch = _ref.dispatch,
-    RegionEditLabel = _ref.RegionEditLabel
-  debug = _ref.debug
+    RegionEditLabel = _ref.RegionEditLabel,
+    debug = _ref.debug
   var classes = useStyles()
   var settings = useSettings()
 
