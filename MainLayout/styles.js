@@ -63,6 +63,7 @@ export default {
     padding: 0,
     width: 30,
     height: 30,
+    opacity: 0.4,
     transform: "rotate(90deg)",
     borderTop: "1px solid #bdbdbd",
     boxShadow: "-1px 2px 5px rgba(0,0,0,0.2)",
@@ -70,8 +71,9 @@ export default {
     borderLeft: "1px solid #bdbdbd",
     borderBottom: "1px solid #bdbdbd",
     backgroundColor: "#fff",
-    borderTopLeftRadius: "50%",
     borderBottomLeftRadius: "50%",
+    borderBottomLeftRadius: "50%",
+    alignItems: "center",
     "& .icon": {
       marginTop: -6,
       width: 20,
